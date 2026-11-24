@@ -1,0 +1,176 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>HEJIN · هجين | Handcrafted camel leather from Riyadh</title>
+<meta name="description" content="Redesign concept for HEJIN: handcrafted camel-leather bags, wallets and accessories from Riyadh. Three-year warranty, personalised on request.">
+<meta name="robots" content="noindex, nofollow">
+<meta name="theme-color" content="#150E09">
+<link rel="icon" type="image/png" href="img/favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;1,9..144,300;1,9..144,400&family=Manrope:wght@400;500;600;700&family=Amiri:wght@400;700&family=Noto+Kufi+Arabic:wght@400;500;600&display=swap">
+<link rel="stylesheet" href="css/site.css">
+<link rel="modulepreload" href="https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js">
+</head>
+<body class="page-home" data-page="home">
+<main id="main">
+
+  <!-- ============ HERO: 3D wallet assembles, opens on scroll ============ -->
+  <section class="make" id="make" aria-label="HEJIN">
+    <div class="make-pin" data-make-pin>
+      <div class="make-bg" aria-hidden="true"><span class="g-ar" lang="ar" data-ghost-ar>هجين</span><span class="g-en" data-ghost-en>HEJIN</span></div>
+      <div class="make-boot" aria-hidden="true"><span class="mark"></span></div>
+      <canvas data-make-canvas aria-hidden="true"></canvas>
+      <div class="make-labels" data-make-labels></div>
+      <div class="make-fallback"><img src="img/p/3688-0-l.webp" alt="HEJIN Aga card wallet" width="700" height="700" fetchpriority="high"></div>
+      <div class="make-copy wrap">
+        <div class="phase on" data-phase="0">
+          <p class="eyebrow" data-i18n="h_eye"></p>
+          <h1 class="mk-h1"><span data-i18n="h_h1a"></span> <em data-i18n="h_h1b"></em></h1>
+          <p class="lede" data-i18n="h_lede"></p>
+          <div class="ctas"><a class="btn" href="shop.html"><span data-i18n="h_cta1"></span> <span class="arr">→</span></a><a class="btn ghost" href="#craft" data-i18n="h_cta2"></a></div>
+        </div>
+        <div class="phase" data-phase="1">
+          <p class="eyebrow" data-i18n="h_anat"></p>
+          <h2 class="mk-h2" data-i18n="h_h2"></h2>
+          <p class="lede" data-i18n="h_p2"></p>
+        </div>
+        <div class="phase" data-phase="2">
+          <p class="eyebrow" data-i18n="h_last"></p>
+          <h2 class="mk-h2" data-i18n="h_h3"></h2>
+          <div class="ctas"><a class="btn" href="shop.html"><span data-i18n="h_cta1"></span> <span class="arr">→</span></a></div>
+        </div>
+      </div>
+      <div class="make-meter"><span data-i18n="h_meter"></span> <b data-meter>100%</b><i><u data-meter-bar></u></i></div>
+      <div class="make-scroll" aria-hidden="true"><span data-i18n="h_scroll"></span><i></i></div>
+    </div>
+  </section>
+
+  <!-- ============ MARQUEE ============ -->
+  <div class="band" aria-hidden="true"><div class="band-track" id="bandTrack"></div></div>
+
+  <!-- ============ COLLECTIONS ============ -->
+  <section class="sec cols" id="collections">
+    <div class="wrap">
+      <header class="sec-h rv"><div><p class="eyebrow" data-i18n="c_eye"></p><h2 data-i18n="c_h"></h2></div><a class="lnk" href="shop.html"><span data-i18n="c_all"></span> →</a></header>
+      <div class="col-grid" id="colGrid"></div>
+    </div>
+  </section>
+
+  <!-- ============ SIGNATURE PIECES (pinned, colour shifts) ============ -->
+  <section class="sig" id="sig">
+    <div class="sig-pin" data-sig-pin>
+      <div class="sig-ghost" data-sig-ghost aria-hidden="true"></div>
+      <div class="sig-stage" id="sigStage"></div>
+      <div class="sig-copies wrap" id="sigCopies"></div>
+      <div class="sig-count" aria-hidden="true"><b data-sig-n>01</b><span>/ 04</span><i><u data-sig-bar></u></i></div>
+    </div>
+  </section>
+
+  <!-- ============ EVERY ANGLE: frame scrub ============ -->
+  <section class="spin" id="spin">
+    <div class="spin-pin" data-spin-pin>
+      <div class="wrap spin-in">
+        <div class="spin-copy">
+          <p class="eyebrow" data-i18n="s_eye"></p>
+          <h2 data-i18n="s_h"></h2>
+          <p class="lede" data-i18n="s_p"></p>
+          <ol class="angles" id="angles"></ol>
+          <a class="btn dark" id="spinLink" href="shop.html"><span data-i18n="s_cta"></span> <span class="arr">→</span></a>
+        </div>
+        <div class="spin-stage" id="spinStage" aria-hidden="true"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CRAFT ============ -->
+  <section class="sec craft" id="craft">
+    <div class="wrap">
+      <header class="sec-h rv"><div><p class="eyebrow" data-i18n="k_eye"></p><h2 data-i18n="k_h"></h2></div></header>
+      <div class="cstep rv">
+        <figure class="clip"><img src="img/l/macro-stitch.webp" alt="Hand stitching on camel leather, macro" width="1200" height="947" loading="lazy" decoding="async"></figure>
+        <div class="ctext"><span class="num">01</span><h3 data-i18n="k1h"></h3><p data-i18n="k1p"></p></div>
+      </div>
+      <div class="cstep flip rv">
+        <figure class="clip"><img src="img/l/macro-stamp.webp" alt="HEJIN camel emblem pressed into leather, macro" width="1200" height="988" loading="lazy" decoding="async"></figure>
+        <div class="ctext"><span class="num">02</span><h3 data-i18n="k2h"></h3><p data-i18n="k2p"></p></div>
+      </div>
+      <div class="cstep rv">
+        <figure class="clip"><img src="img/l/passport-wide.webp" alt="HEJIN passport wallet" width="1600" height="1067" loading="lazy" decoding="async"></figure>
+        <div class="ctext"><span class="num">03</span><h3 data-i18n="k3h"></h3><p data-i18n="k3p"></p></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ PERSONALISE ============ -->
+  <section class="sec yours" id="yours">
+    <div class="wrap yours-in">
+      <div class="yours-copy rv">
+        <p class="eyebrow" data-i18n="y_eye"></p>
+        <h2 data-i18n="y_h"></h2>
+        <p class="lede" data-i18n="y_p"></p>
+        <div class="ctl"><label data-i18n="y_leather"></label><div class="chips" id="yChips" role="radiogroup"></div></div>
+        <div class="ctl"><label for="yText" data-i18n="y_text"></label><input id="yText" maxlength="12" value="HJ" autocomplete="off" spellcheck="false"></div>
+        <div class="ctl"><label data-i18n="y_foil"></label><div class="seg" id="ySeg"><button class="on" data-foil="gold" data-i18n="y_gold"></button><button data-foil="blind" data-i18n="y_blind"></button></div></div>
+        <a class="btn" id="yCta" href="#" target="_blank" rel="noopener"><span data-i18n="y_cta"></span> <span class="arr">→</span></a>
+      </div>
+      <div class="swatch-wrap rv"><div class="swatch" id="swatch"><span class="camel" aria-hidden="true"></span><span class="mono" id="yMono">HJ</span><span class="cap" data-i18n="y_cap"></span></div></div>
+    </div>
+  </section>
+
+  <!-- ============ NAMED FOR THE KINGDOM ============ -->
+  <section class="sec names" id="names">
+    <div class="wrap">
+      <header class="sec-h rv"><div><p class="eyebrow" data-i18n="n_eye"></p><h2 data-i18n="n_h"></h2></div></header>
+      <ul class="name-list" id="nameList"></ul>
+    </div>
+    <div class="name-peek" id="namePeek" aria-hidden="true"><img alt=""></div>
+  </section>
+
+  <!-- ============ RAIL ============ -->
+  <section class="sec rail-sec" id="rail">
+    <div class="wrap">
+      <header class="sec-h rv"><div><p class="eyebrow" data-i18n="r_eye"></p><h2 data-i18n="r_h"></h2></div>
+        <div class="tabs" id="railTabs" role="tablist"></div></header>
+    </div>
+    <div class="rail" id="railTrack"></div>
+    <div class="wrap"><a class="btn dark rail-all" href="shop.html"><span data-i18n="r_all"></span> <span class="arr">→</span></a></div>
+  </section>
+
+  <!-- ============ CARE ============ -->
+  <section class="care" id="care">
+    <div class="wrap">
+      <header class="sec-h rv"><div><p class="eyebrow" data-i18n="v_eye"></p><h2 data-i18n="v_h"></h2></div></header>
+      <div class="care-grid">
+        <article class="rv"><b class="big" data-count-to="3">3</b><h3 data-i18n="v1h"></h3><p data-i18n="v1p"></p></article>
+        <article class="rv"><b class="big ic">✦</b><h3 data-i18n="v2h"></h3><p data-i18n="v2p"></p></article>
+        <article class="rv"><b class="big ic">◈</b><h3 data-i18n="v3h"></h3><p data-i18n="v3p"></p></article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ FINALE ============ -->
+  <section class="fin" id="fin">
+    <div class="fin-camel" aria-hidden="true"></div>
+    <div class="wrap fin-in">
+      <p class="eyebrow" data-i18n="f_eye"></p>
+      <h2 data-i18n="f_h"></h2>
+      <div class="ctas"><a class="btn" href="shop.html"><span data-i18n="h_cta1"></span> <span class="arr">→</span></a><a class="btn ghost" id="finWa" href="#" target="_blank" rel="noopener" data-i18n="f_wa"></a></div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/data.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+<script src="js/app.js"></script>
+<script src="js/home.js"></script>
+<script type="importmap">{ "imports": { "three": "https://cdn.jsdelivr.net/npm/three@0.160.0/build/three.module.js", "three/addons/": "https://cdn.jsdelivr.net/npm/three@0.160.0/examples/jsm/" } }</script>
+<script type="module" src="js/assembly.js"></script>
+</body>
+</html>
