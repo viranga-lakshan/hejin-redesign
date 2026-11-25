@@ -82,6 +82,7 @@ html:not(.js) .rv{opacity:1;transform:none}
 .mega-feat span{position:absolute;inset:auto 14px 12px;font:300 24px var(--display)}
 .mnav{position:fixed;inset:0;z-index:80;background:var(--espresso);color:var(--cream);display:flex;flex-direction:column;justify-content:center;padding:0 var(--gut);gap:6px;transform:translateX(-100%);transition:transform .55s var(--ease)}
 html[dir=rtl] .mnav{transform:translateX(100%)}
+html[dir=rtl] .mnav.open{transform:none}
 .mnav.open{transform:none}
 .mnav a{font:300 clamp(34px,9vw,52px) var(--display);padding:6px 0;border-bottom:1px solid rgba(248,241,230,.1)}
 html[lang=ar] .mnav a{font-family:'Amiri',serif;font-weight:700}
@@ -298,7 +299,7 @@ html[lang=ar] .giant{font-family:'Amiri',serif;font-weight:700;line-height:1}
 /* ---------- drawer / search / toast / wa ---------- */
 .scrim{position:fixed;inset:0;background:rgba(21,14,9,.55);opacity:0;visibility:hidden;transition:.4s;z-index:90}.scrim.on{opacity:1;visibility:visible}
 .drawer{position:fixed;top:0;bottom:0;inset-inline-end:0;width:min(440px,100vw);background:var(--paper);z-index:100;display:flex;flex-direction:column;transform:translateX(100%);transition:transform .55s var(--ease)}
-html[dir=rtl] .drawer{transform:translateX(-100%)}.drawer.on{transform:none}
+html[dir=rtl] .drawer{transform:translateX(-100%)}.drawer.on,html[dir=rtl] .drawer.on{transform:none}
 .drawer>header{display:flex;justify-content:space-between;align-items:center;padding:18px 22px;border-bottom:1px solid var(--line);font:300 26px var(--display)}
 .items{flex:1;overflow:auto;padding:8px 22px}
 .ditem{display:grid;grid-template-columns:84px 1fr auto;gap:16px;padding:16px 0;border-bottom:1px solid var(--line);align-items:center}
