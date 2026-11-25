@@ -42,7 +42,7 @@
       waPersonal: 'مرحباً هجين، أرغب بقطعة مخصصة.',
     },
   };
-  let lang = store.get('hj-lang', 'en');
+  let lang = store.get('hj-lang', 'ar');
   if (!D[lang]) lang = 'en';
   const extra = { en: {}, ar: {} };
   const t = (k) => (extra[lang][k] ?? D[lang][k] ?? extra.en[k] ?? D.en[k] ?? k);
@@ -96,7 +96,7 @@
     const tick = ['tick1', 'tick2', 'tick3', 'tick4', 'tick5'];
     const tickHtml = tick.concat(tick).map((k) => `<span data-i18n="${k}"></span>`).join('');
     document.body.insertAdjacentHTML('afterbegin', `
-      <a class="skip" href="#main">Skip to content</a>
+      <a class="skip" href="#main">${lang === 'ar' ? 'انتقل إلى المحتوى' : 'Skip to content'}</a>
       <header class="hdr${dark ? '' : ' light solid'}" id="hdr">
         <div class="ticker" aria-hidden="true"><div class="ticker-track">${tickHtml}${tickHtml}</div></div>
         <div class="wrap hdr-in">
